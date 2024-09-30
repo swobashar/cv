@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<!-- index-152:58-->
+<head>
+	<!--===== Meta Tag =====-->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="Runaway - Personal Portfolio HTML Template">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="business, agency, blog, cv, creative, html, one page, personal, portfolio, resume, responsive, bootstrap, photography, designer, developer">
+	<meta name="author" content="root">
+
+	 <!--	Css Links
+    ==================================================-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/jquery.pagepiling.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/color.css' %}" id="color-change">
+
+     <!-- Favicon 
+    ==================================================-->
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon.ico' %}">
+
+      <!--	Title
+    ==================================================-->
+	<title>SWO Abul Bashar</title>
+
+</head>
+<body id="top" class="page-load">
+	<!--	Preloader
+	==================================================-->
+	<div class="preloader">
+		<div class="lds-css ng-scope">
+			<div class="lds-spinner" style="100%;height:100%">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+	<!-- Color Settings Start
+	==================================================-->
+	<div class="color-panel">
+		<div class="on-panel color_white bg_primary">
+			<div class="text-center icon-spinner">
+			  <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+			</div>
+		</div>
+		<div class="panel-box">
+			<span class="panel-title">Theme Colors</span>
+			<ul class="color-box">
+				<li class="default" data-name="default" data-path="{% static 'css/color.css' %}" data-image="{% static 'images/logo/29.png' %}" data-target="{% static 'images/logo/29.png' %}"></li>
+				<li class="color_2" data-name="color_2" data-path="{% static 'css/color/color-1.css' %}" data-image="{% static 'images/logo/30.png' %}" data-target="{% static 'images/logo/30.png' %}"></li>
+				<li class="color_3" data-name="color_3" data-path="{% static 'css/color/color-2.css' %}" data-image="{% static 'images/logo/31.png' %}" data-target="{% static 'images/logo/31.png' %}"></li>
+				<li class="color_4" data-name="color_4" data-path="{% static 'css/color/color-3.css' %}" data-image="{% static 'images/logo/32.png' %}" data-target="{% static 'images/logo/32.png' %}"></li>
+				<li class="color_5" data-name="color_5" data-path="{% static 'css/color/color-4.css' %}" data-image="{% static 'images/logo/33.png' %}" data-target="{% static 'images/logo/33.png' %}"></li>
+				<li class="color_6" data-name="color_6" data-path="{% static 'css/color/color-5.css' %}" data-image="{% static 'images/logo/34.png' %}" data-target="{% static 'images/logo/34.png' %}"></li>
+				<li class="color_7" data-name="color_7" data-path="{% static 'css/color/color-6.css' %}" data-image="{% static 'images/logo/35.png' %}" data-target="{% static 'images/logo/35.png' %}"></li>
+				<li class="color_8" data-name="color_8" data-path="{% static 'css/color/color-7.css' %}" data-image="{% static 'images/logo/36.png' %}" data-target="{% static 'images/logo/36.png' %}"></li>
+				<li class="color_9" data-name="color_9" data-path="{% static 'css/color/color-8.css' %}" data-image="{% static 'images/logo/37.png' %}" data-target="{% static 'images/logo/37.png' %}"></li>
+				<li class="color_10" data-name="color_10" data-path="{% static 'css/color/color-9.css' %}" data-image="{% static 'images/logo/38.png' %}" data-target="{% static 'images/logo/38.png' %}"></li>
+				<li class="color_11" data-name="color_11" data-path="{% static 'css/color/color-10.css' %}" data-image="{% static 'images/logo/39.png' %}" data-target="{% static 'images/logo/39.png' %}"></li>
+				<li class="color_12" data-name="color_12" data-path="{% static 'css/color/color-11.css' %}" data-image="{% static 'images/logo/40.png' %}" data-target="{% static 'images/logo/40.png' %}"></li>
+				<li class="color_13" data-name="color_13" data-path="{% static 'css/color/color-12.css' %}" data-image="{% static 'images/logo/41.png' %}" data-target="{% static 'images/logo/41.png' %}"></li>
+				<li class="color_14" data-name="color_14" data-path="{% static 'css/color/color-13.css' %}" data-image="{% static 'images/logo/42.png' %}" data-target="{% static 'images/logo/42.png' %}"></li>
+			</ul>
+		</div>
+		
+	</div>
+	<!--  Color Settings End
+	==============================================-->
+	<!--	Start Sidebar
+	==================================================-->
+	<div id="mysidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="flaticon-close-button"></i></a>
+	  <img class="nav-logo" src="images/logo/29.png" alt="image">
+	  	<ul id="menu">
+			<li data-menuanchor="page1" class="active"><a href="#page1">Home</a></li>
+			<li data-menuanchor="page2"><a href="#page2">About</a></li>
+			<li data-menuanchor="page3"><a href="#page3">Resume</a></li>
+			<li data-menuanchor="page4"><a href="#page4">Portfolio</a></li>
+			<li data-menuanchor="page5"><a href="#page5">Team</a></li>
+			<li data-menuanchor="page6"><a href="#page6">Testimonial</a></li>
+			<li data-menuanchor="page7"><a href="#page7">Contact</a></li>
+			
+		</ul>
+	</div>
+	<div class="sidebar bg_primary">
+		<div class="logo text-center"><a href="#page1"><img class="nav-logo" src="{% static 'images/logo/29.png' %}" alt="logo"></a></div>
+		<span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+		<div class="socal_media mt_60">
+			<ul>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>			
+	</div>
+	<div class="contact_massage bg_primary">
+		<a href="#page9"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+	</div>
+	<!--	End Sidebar
+	=======================================================-->
+	<div id="pagepiling">
+	    <!--	Start Slider
+		===================================================-->
+		<div id="slider" class="section bg_white">
+			<div class="line-container">
+				<div class="row">
+					<div class="col-md-3 col-lg-3"><div class="liner"></div></div>
+					<div class="col-md-3 col-lg-3"><div class="liner"></div></div>
+					<div class="col-md-3 col-lg-3"><div class="liner"></div></div>
+					<div class="col-md-3 col-lg-3"><div class="liner"></div></div>
+				</div>
+			</div>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner overlay_three">
+			    <div class="carousel-item active">
+			      <div class="overlay_one pattan"><img  class="" src="{% static 'images/slider/01.jpg' %}" alt="slide image"></div>
+			      <div class="carousel-caption">
+			        <h1 class="mb_20">Senior Warrant Officer (Retd) <br> <span class="color_default">Md Abul Bashar</span></h1>
+			        
+			        {% for p in all_pdf_resume %}
+			        <a class="btn btn-default" href="{{p.pdf.url}}" >DOWNLOAD RESUME</a>
+			        {% endfor %}
+			    </div>
+			    </div>
+
+			    <div class="carousel-item">
+			    <div class="overlay_one pattan">
+			        <img src="{% static 'images/slider/02.jpg' %}" alt="slide image">
+			    </div>
+			    <div class="carousel-caption">
+			        <h1 class="mb_20">Senior Warrant Officer (Retd) <br> <span class="color_default">Md Abul Bashar</span></h1>
+			        
+			        {% for p in all_pdf_resume %}
+			        <a class="btn btn-default" href="{{p.pdf.url}}" >DOWNLOAD RESUME</a>
+			        {% endfor %}
+			    </div>
+			</div>
+
+			    <div class="carousel-item">
+			      <div class="overlay_one pattan"><img src="{% static 'images/slider/03.jpg' %}" alt="slide image"></div>
+			      <div class="carousel-caption">
+			        <h1 class="mb_20">Senior Warrant Officer (Retd) <br> <span class="color_default">Md Abul Bashar</span></h1>
+			        
+			        {% for p in all_pdf_resume %}
+			        <a class="btn btn-default" href="{{p.pdf.url}}" >DOWNLOAD RESUME</a>
+			        {% endfor %}
+			    </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	    <!--	End Slider
+		===================================================-->
+		<!--	Start About
+		===================================================-->
+	    <div id="about" class="section bg_white pp-scrollable">
+	    	<div class="container-fluid">
+	    		<div class="row">
+	    			<div class="about2">
+	    				<div class="col-md-12 col-lg-12">
+	    					<div class="row">
+	    						<div class="col-md-4 col-lg-4">
+	    							<div class="overlay_one"><img src="{% static 'images/about/01.jpg' %}" alt="image"></div>
+	    						</div>
+	    						<div class="col-md-8 col-lg-8">
+	    							<div class="about_myself pb_60">
+	    								<!--	Start Title
+	    								================================-->
+	    								<div class="main_title my_60">
+											<h2 class="title color_primary">About Me</h2>
+											<p class="mt_15">Brief information about my army life and skills is provided below.</p>											
+										</div>
+										<!--	End Title
+	    								================================-->
+										<div class="row">
+		    								<div class="col-md-6 col-lg-6">
+												<div class="myself color_secondery">
+													<p>Retired Senior Warrant Officer with 29 years of service in the
+													Bangladesh Army (<b>BJO42384</b>), 4 East Bengal Regiment. Offering extensive
+													leadership and operational experience, with a strong ability to
+													perform under pressure. Ready to leverage military expertise in a
+													new role
+													</p>
+													
+													<p class="pt_30"><b>Skills:</b><br> Observation skills,<br> communication,<br>situational awareness,<br> physical fitness,<br> conflict resolution,<br> knowledge of security protocols,<br> critical thinking,<br> legal knowledge,<br> teamwork, <br>first aid, <br>fire management.</p>
+												</div>
+				    						</div>
+				    						<div class="col-md-6 col-lg-6">
+				    							<div class="personal_info">
+				    								<ul>
+				    									<li><span class="color_secondery">Name :</span> Md Abul Bashar</li>
+														<li><span class="color_secondery">Email :</span> swoabulbashar@gmail.com</li>
+														<li><span class="color_secondery">Phone :</span> +8801756293201</li>
+														<li><span class="color_secondery">Date of Birth :</span> 13 October 1961</li>
+														<li><span class="color_secondery">Blood Group :</span> O+</li>
+														<li><span class="color_secondery">Address :</span> 157/9, Taltola,Dakshinkhan,Dhaka -1230</li>		
+				    								</ul>
+				    							</div>
+				    						</div>
+		    							</div>
+	    							</div>
+	    						</div>
+	    					</div>	
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <!--	End About
+		===================================================-->
+		<!--	Start Education and Experience
+		===================================================-->
+	    <div id="education" class="section bg_white pp-scrollable">
+	    	<div class="container-fluid">
+	    		<div class="row">
+	    			<div class="col-md-12 col-lg-12">
+	    				<div class="education_experience ml_105">
+	    					<!--	Start Title
+	    					================================-->
+		    				<div class="main_title my_60">
+								<h2 class="title color_primary">Education & Experience</h2>
+								<p class="mt_15">The experience and education information is provided below.</p>											
+							</div>
+							<!--	End Title
+	    					================================-->
+		    				<ul class="nav nav-pills pb_60" id="pills-tab" role="tablist">
+							  <li class="nav-item">
+							    <a class="btn btn-default active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Experience</a>
+							  </li>
+							  <li class="nav-item mx_10">
+							    <a class="btn btn-default" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Education</a>
+							  </li>
+							</ul>
+							<div class="tab-content" id="pills-tabContent">
+							  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+						  		<div class="company pb_60">
+								  	<div class="row">
+								  		<div class="col-md-12 col-lg-4">
+								  			<h1 class="color_lightgray font-weight-bold">01.</h1>
+								  			<h4 class="color_primary font-weight-bold">Blue Ocean Footwear Limited </h4>
+								  			<span class="color_secondery">2017 - 2024</span>
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<p>This is to certify that Mr. Md. Abul Bashar, ID No: 020534, served at Blue Ocean Footwear Limited as Security Officer in the department of HR & Admin from November 12, 2017, to September 25, 2024. Mr. Bashar resigned from Blue Ocean Footwear Limited due to personal affairs and cleared all official formalities. Mr. Bashar has consistently displayed outstanding leadership and expertise in managing security operations. He has effectively supervised the security team, implemented safety protocols, and ensured a secure environment for our facilities. His ability to assess situations and respond appropriately has greatly enhanced our security measures. Mr. Bashar has also been instrumental in conducting training sessions for security personnel, fostering a culture of vigilance and preparedness. His commitment to maintaining high standards of safety and security has been invaluable to our organization. All concerned are requested to extend cooperation to him. The undersigned is ready to respond to any queries regarding him.<br>
+								  			<b>Mominur Rahman <br>Deputy General Manager (HR, Admin & Compliance)</b></p>
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<img src="{% static 'images/education/01.jpg' %}" alt="image">
+								  		</div>
+							  		</div>
+							  	</div>
+							  	<div class="company pb_60">
+							  		<div class="row">
+								  		<div class="col-md-12 col-lg-4">
+								  			<p>I worked at Uttara Club as the Chief Security Officer. My work experience was excellent, although my tenure was approximately 11 months.</p>
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<img src="{% static 'images/education/02.jpg' %}" alt="image">
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<h1 class="color_lightgray font-weight-bold">02.</h1>
+								  			<h4 class="color_primary font-weight-bold">The Uttara Club Limited</h4>
+								  			<span class="color_secondery">Jan 10,2017 - Oct 30,2017</span>
+								  		</div>
+								  	</div>
+							  	</div>
+							  	<div class="company pb_60">
+							  		<div class="row">
+							  			<div class="col-md-12 col-lg-4">
+								  			<img src="{% static 'images/education/03.jpg' %}" alt="image">
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<h1 class="color_lightgray font-weight-bold">03.</h1>
+								  			<h4 class="color_primary font-weight-bold">Bashundhara </h4>
+								  			<span class="color_secondery">Jan 01, 2014 – December 31th, 2016</span>
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<p>I worked at Bashundhara Residential Area as a Security Officer. I was responsible for patrolling the area, managing the safety and security guards, and overseeing fire management. My work experience there lasted approximately 2 years.</p>
+								  			
+								  		</div>
+								  	</div>
+							  	</div>
+							  </div>
+							  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+							  	<div class="company pb_60">
+							  		<div class="row">
+								  		<div class="col-md-12 col-lg-4">
+								  			<img src="{% static 'images/education/04.jpg' %}" alt="image">
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<p>I served in the Bangladesh Army for about 29 years and completed many courses from the School of Bangladesh Army, I received training in several sectors of the Army, and my education expanded in various ways during my service</p>
+								  			
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<h1 class="color_lightgray font-weight-bold">01.</h1>
+								  			<h4 class="color_primary font-weight-bold">Bangladesh Army</h4>
+								  			<span class="color_secondery">1979- 2009</span>
+								  		</div>
+								  	</div>
+							  	</div>
+							  	<div class="company pb_60">
+							  		<div class="row">
+								  		<div class="col-md-12 col-lg-4">
+								  			<h1 class="color_lightgray font-weight-bold">02.</h1>
+								  			<h4 class="color_primary font-weight-bold">East Bengal Regimental Centre</h4>
+								  			<span class="color_secondery">1979 - 1980</span>
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<img src="{% static 'images/education/05.jpg' %}" alt="image">
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<p>I completed my army recruitment training and theoretical education at the East Bengal Regiment Centre to serve in the Bangladesh Army. I began my army career with the 4th East Bengal Regiment. </p>
+</p>
+								  			
+								  		</div>
+								  	</div>
+							  	</div>
+							  	<div class="company pb_60">
+							  		<div class="row">
+							  			<div class="col-md-12 col-lg-4">
+								  			<p>I completed my matriculation from Mohakal ML High School. I was a student of Science.
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<h1 class="color_lightgray font-weight-bold">03.</h1>
+								  			<h4 class="color_primary font-weight-bold">Matric in Science
+											Second Division</h4>
+								  			<span class="color_secondery">1971 - 1980</span>
+								  		</div>
+								  		<div class="col-md-12 col-lg-4">
+								  			<img src="{% static 'images/education/06.jpg' %}" alt="image">
+								  		</div>
+								  	</div>
+							  	</div>
+							  </div>
+							</div>
+		    			</div>
+	    			</div>
+	    		</div>
+	    		<div class="row bg_primary">
+	    			<div class="col-md-12 col-lg-12">
+	    				<div class="video my_60">
+							<div class="row">
+								<div class="col-md-12 col-lg-7">
+									<div class="video_content ml_105">
+										<h2 class="color_default">My professional video</h2>
+										<p class="color_white">My professional brief video is provided below, along with some photos of my work from my last company. In the video, you'll find highlights of my key projects, showcasing my skills in [specific skills or areas of expertise, e.g., project management, graphic design, software development]. The photos further illustrate my contributions to various projects, including [briefly describe the types of projects or roles, e.g., team leadership, innovative solutions, or client collaborations]. I believe these examples reflect my commitment to excellence and my ability to deliver results</p>
+									</div>
+								</div>
+								<div class="col-md-12 col-lg-5">
+									<div class="personal_video">
+										<img src="{% static 'images/video.jpg' %}" alt="image">
+										{% for p in all_professional_videos %}
+										<a class="video-popup" href="{{p.url}}" title="video popup">
+										<i class="fa fa-play" aria-hidden="true"></i></a>
+										{% endfor %}
+										<div class="loader xy-center">
+											<div class="loader-inner ball-scale-multiple">
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <!--	End Education and Experience
+		===================================================-->
+		
+		<!--	Start Portfolio
+		===================================================-->
+	    <div id="portfolio" class="section bg_white pp-scrollable">
+	    	<div class="container">
+	    		<div class="portfolio2 my_60">
+	    			<div class="row">
+		    			<div class="col-md-12 col-lg-12">
+		    				<!--	Start Title
+		    				================================-->
+		    				<div class="main_title pb_60">
+								<h2 class="title color_primary">Portfolio</h2>
+								<p class="mt_15">The portfolio of my work is provided here with a filtration option.</p>											
+							</div>
+							<!--	End Title
+		    				================================-->
+		    			</div>
+		    			<div class="col-md-12 col-lg-12">
+							<div class="my_portfolio" id="tab-panel"> 
+		              			<!--Filter-->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="filters mb_30 w-100">
+											<ul class="filter-tabs d-inline-block">
+												<li class="active filter" data-role="button" data-filter="all">All</li>
+												<li class="filter" data-role="button" data-filter=".design">Physical Exercise</li>
+												<li class="filter" data-role="button" data-filter=".wordpress">Fire Management</li>
+												<li class="filter" data-role="button" data-filter=".development">Winter Activities</li>
+												<li class="filter" data-role="button" data-filter=".branding">Covit-19 Challenges</li>
+											</ul>
+										</div>
+									</div>
+								</div>	
+					              
+								<div class="filter-list">
+									<div class="portfolio-items">
+										<div class="row">
+										  	<div class="column mix mix_all graphic development  mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/01.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/01.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="column mix mix_all  branding mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/30.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/30.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+											<div class="column mix mix_all  branding mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/31.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/31.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+											<div class="column mix mix_all  branding mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/32.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/32.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+											<div class="column mix mix_all  branding mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/33.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/33.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+											<div class="column mix mix_all  branding mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/34.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/34.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+
+											<div class="column mix mix_all design  development mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/03.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/03.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+
+											</div>
+
+											<div class="column mix mix_all development mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/26.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/26.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+
+											</div>
+
+											<div class="column mix mix_all development mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/27.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/27.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+
+											</div>
+
+											<div class="column mix mix_all development mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/28.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/28.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+
+											</div>
+
+
+											<div class="column mix mix_all development mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/29.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/29.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+
+											</div>
+
+
+
+
+											<div class="column mix mix_all design  mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/05.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/05.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+
+												
+
+											</div>
+
+											<div class="column mix mix_all design  mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/20.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/20.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+
+											</div>
+
+											<div class="column mix mix_all design  mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/21.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/21.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+
+											</div>
+
+											<div class="column mix mix_all design  mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/22.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/22.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+
+											</div>
+
+
+
+											<div class="column mix mix_all graphic branding mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/04.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/04.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="column mix mix_all  design  mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/40.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/40.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="column mix mix_all  wordpress mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/10.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/10.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+											<div class="column mix mix_all  wordpress mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/11.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/11.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+											<div class="column mix mix_all wordpress mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/12.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/12.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+											<div class="column mix mix_all wordpress mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/24.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/24.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+											<div class="column mix mix_all wordpress mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/25.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/25.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+
+
+											<div class="column mix mix_all wordpress mb_30 col-md-4 col-lg-4">
+												<div class="default-portfolio-item">
+													<a href="{% static 'images/portfolio/13.jpg' %}" data-fancybox="gallery">
+														<img src="{% static 'images/portfolio/13.jpg' %}" alt="image" />
+														<div class="overlay-box">
+															<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+															<div class="tag">
+																<ul>
+																	
+																</ul>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>		
+					        </div>
+						</div>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+		<!--	End Portfolio
+		===================================================-->
+		
+		<!--	Start Team
+		===================================================-->
+	    <div id="team" class="section bg_white pp-scrollable">
+	    	<div class="container">
+	    		<div class="team my_60">
+	    			<div class="row">
+		    			<div class="col-md-12 col-lg-12">
+		    				<!--	Start Title
+		    				================================-->
+		    				<div class="main_title pb_60">
+								<h2 class="title color_primary">Team</h2>
+								<p class="mt_15">Team work is the best work if we want to reach our goal</p>											
+							</div>
+							<!--	End Title
+		    				================================-->
+		    			</div>
+		    		</div>
+		    		<div class="row">
+		    			<div class="col-md-12 col-lg-12">
+		    				<div class="team_member owl-carousel">
+		    					<div class="member">
+	    							<img src="{% static 'images/team/01.jpg' %}" alt="image">
+	    							<div class="data">
+	    								
+	    							</div>
+	    							<div class="hover_overlay">
+	    								<div class="border">
+	    									<h4 class="color_default font-weight-bold text-center text-uppercase"></h4>
+		    								<strong class="color_white text-center d-block mb_15"></strong>
+		    								<p class="color_white">Teamwork is the foundation of success. When individuals collaborate, they combine strengths, ideas, and skills, leading to innovative solutions and greater achievements. Together, everyone achieves more.</p>
+		    								<div class="socal_media">
+												<ul>
+													<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+													
+												</ul>
+											</div>
+	    								</div>
+	    							</div>
+	    						</div>
+			    				<div class="member">
+	    							<img src="{% static 'images/team/02.jpg' %}" alt="image">
+	    							<div class="data">
+	    								
+	    							</div>
+	    							<div class="hover_overlay">
+	    								<div class="border">
+	    									<h4 class="color_default font-weight-bold text-center text-uppercase"></h4>
+		    								<strong class="color_white text-center d-block mb_15"></strong>
+		    								<p class="color_white">Teamwork is the foundation of success. When individuals collaborate, they combine strengths, ideas, and skills, leading to innovative solutions and greater achievements. Together, everyone achieves more.</p>
+		    								<div class="socal_media">
+												<ul>
+													<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+													
+												</ul>
+											</div>
+	    								</div>
+	    							</div>
+	    						</div>
+			    				<div class="member">
+	    							<img src="{% static 'images/team/03.jpg' %}" alt="image">
+	    							<div class="data">
+	    								
+	    							</div>
+	    							<div class="hover_overlay">
+	    								<div class="border">
+	    									
+		    								<p class="color_white">Teamwork is the foundation of success. When individuals collaborate, they combine strengths, ideas, and skills, leading to innovative solutions and greater achievements. Together, everyone achieves more.</p>
+		    								<div class="socal_media">
+												<ul>
+													<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+													
+												</ul>
+											</div>
+	    								</div>
+	    							</div>
+	    						</div>
+	    						<div class="member">
+	    							<img src="{% static 'images/team/04.jpg' %}" alt="image">
+	    							<div class="data">
+	    								
+	    							</div>
+	    							<div class="hover_overlay">
+	    								<div class="border">
+	    									<h4 class="color_default font-weight-bold text-center text-uppercase"></h4>
+		    								<strong class="color_white text-center d-block mb_15"></strong>
+		    								<p class="color_white">Teamwork is the foundation of success. When individuals collaborate, they combine strengths, ideas, and skills, leading to innovative solutions and greater achievements. Together, everyone achieves more.</p>
+		    								<div class="socal_media">
+												<ul>
+													<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+													
+												</ul>
+											</div>
+	    								</div>
+	    							</div>
+	    						</div>
+		    				</div> 
+		    			</div>
+		    		</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <!--	End Team
+		===================================================-->
+		<!--	Start Testimonial
+		===================================================-->
+	    <div id="testimonial" class="section bg_white pp-scrollable">
+	    	<div class="container">
+	    		<div class="testimonial my_60">
+	    			<div class="row">
+		    			<div class="col-md-12 col-lg-12">
+		    				<!--	Start Title
+		    				================================-->
+		    				<div class="main_title pb_60">
+								<h2 class="title color_primary">Testimonial</h2>
+								<p class="mt_15">Testimonials from some of my colleagues are given below</p>											
+							</div>
+							<!--	End Title
+		    				================================-->
+		    			</div>
+		    			<div class="col-md-12 col-lg-12">
+		    				<div class="testimonial_item owl-carousel wow animated slideInUp">
+		    					<div class="member_feedback p_30">
+									<div class="client_img"><img src="{% static 'images/testimonial/01.jpg' %}" alt="image"></div>
+									<div class="star d-inline-block mt_30 color_default">
+										<ul>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										</ul>
+									</div>
+									<h5 class="color_primary mb_15">MOHAMMAD REZOAN MAMUN</h5>
+									<p>As a colleague, I have found him to be extremely cooperative and punctual. I wish him all the best in his future endeavors.
+									ERP Officer,Accounts & Finance Department </p>
+								</div>
+								<div class="member_feedback p_30">
+									<div class="client_img"><img src="{% static 'images/testimonial/02.jpg' %}" alt="image"></div>
+									<div class="star d-inline-block mt_30 color_default">
+										<ul>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										</ul>
+									</div>
+									<h5 class="color_primary mb_15">Shoriful Islam</h5>
+									<p>As a colleague, I have found him to be extremely cooperative and punctual and hard working. I wish him all the best in his future endeavors.Accounts & Finance Department</p>
+								</div>
+								<div class="member_feedback p_30">
+									<div class="client_img"><img src="{% static 'images/testimonial/03.jpg' %}" alt="image"></div>
+									<div class="star d-inline-block mt_30 color_default">
+										<ul>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										</ul>
+									</div>
+									<h5 class="color_primary mb_15">Mominur Rahman </h5>
+									<p>Mr. Bashar has consistently displayed outstanding leadership and expertise in managing security operations. He has effectively supervised the security team, implemented safety protocols, and ensured a secure environment for our facilities.I wish him all the best in his future endeavors.Mominur Rahman
+                                     Deputy General Manager (HR, Admin & Compliance)</p>
+								</div>
+								
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+		<!--	End Testimonial
+		===================================================-->
+		<!--	Start Contact
+		===================================================-->
+	    <div id="contact" class="section bg_white pp-scrollable">
+	    	<div class="container">
+	    		<div class="contact pt_60">
+	    			<div class="row">
+		    			<div class="col-md-12 col-lg-12">
+		    				<!--	Start Title
+		    				================================-->
+		    				<div class="main_title pb_60">
+								<h2 class="title color_primary">Contact</h2>
+								<p class="mt_15">The contract and all the necessary information are provided below.</p>											
+							</div>
+							<!--	End Title
+		    				================================-->
+		    			</div>
+		    		</div>
+		    		<div class="row">
+		    			<div class="col-md-5 col-lg-4">
+		    				<div class="contact_info">
+		    					<ul>
+		    						<li>
+		    							<div class="contact_icon float-left"><i class="fa fa-phone" aria-hidden="true"></i></div>
+		    							<div class="contact_text">
+		    								<h6 class="font-weight-bold color_primary">CALL</h6>
+		    								<span class="color_secondery">+8801756293201</span>
+		    							</div>
+		    						</li>
+		    						<li>
+		    							<div class="contact_icon float-left"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+		    							<div class="contact_text">
+		    								<h6 class="font-weight-bold color_primary">EMAIL</h6>
+		    								<span class="color_secondery">swoabulbashar@gmail.com</span>
+		    							</div>
+		    						</li>
+		    						<li>
+		    							<div class="contact_icon float-left"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+		    							<div class="contact_text">
+		    								<h6 class="font-weight-bold color_primary">ADDRESS</h6>
+		    								<span class="color_secondery">157/9, Taltola
+											Dakshinkhan,Dhaka -1230</span>
+		    							</div>
+		    						</li>
+		    					</ul>
+		    				</div>
+		    			</div>
+		    			<div class="col-md-7 col-lg-8">
+		    				<form class="form contact_message pb_60" id="contact-form" action="#" method="post">
+								<div class="row">
+									<div class="col-md-6 col-lg-6">
+										<div class="form-group">
+											<input class="form-control" type="text" name="name" placeholder="Your Name" />
+										</div>
+									</div>
+									<div class="col-md-6 col-lg-6">
+										<div class="form-group">
+											<input class="form-control" type="email" name="email" placeholder="Email Address" />
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-12">
+										<div class="form-group">
+										  <input class="form-control" type="text" name="subject" placeholder="Subject"/>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-12">
+										<div class="form-group">
+											<textarea class="form-control" name="message" rows="7" placeholder="Message"></textarea>
+										</div>							
+									</div>
+									<div class="col-md-12 col-lg-12">
+										<div class="form-group">
+											<input class="btn btn-default" id="send" value="Send Message" type="submit" disabled />
+
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-12">
+										<div class="error-handel">
+											<div id="success">Your email sent Successfully, Thank you.</div>
+											<div id="error"> Error occurred while sending email. Please try again later.</div>
+										</div>
+									</div>
+								</div>
+							</form>
+		    			</div>
+		    		</div>
+	    		</div>
+	    	</div>
+	    	
+		<!--	End Contact
+		===================================================-->
+	</div>
+	<!--	Js Links
+	===================================================-->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/popper.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/plugins.js' %}"></script>
+	<script src="{% static 'js/jquery.pagepiling.min.js' %}"></script>
+	<script src="{% static 'js/custom.js' %}"></script>
+	<script>
+		var deleteLog = false;
+		//	Pagepiling js
+		//=====================================================
+		$(document).ready(function() {
+	    	$('#pagepiling').pagepiling({
+		    	menu: '#menu',
+		    	anchors: ['page1', 'page2', 'page3', 'page4', 'page5','page6', 'page7', 'page8','page9'],
+		    	loopTop: true,
+		    	loopBottom: true
+		  	});
+	    });
+		//	Sidebar Nav Menu js
+		//=====================================================
+		function openNav() {
+		    document.getElementById("mysidenav").style.width = "150px";
+		}
+		function closeNav() {
+		    document.getElementById("mysidenav").style.width = "0";
+		}
+    </script>
+</body>
+
+<!-- index-154:30-->
+</html>
